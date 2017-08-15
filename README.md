@@ -1,2 +1,2 @@
 # twebpack
-hello wrld
+Обучение Webpack
