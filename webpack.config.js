@@ -10,7 +10,25 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.js$/, exclude: [/node_modules/,/public/], loader: "babel-loader" }
+            {
+                test: /\.js$/,
+                exclude: [/node_modules/,/public/],
+                loader: ["react-hot-loader","babel-loader"]
+            },
+            {
+                test: /\.css$/,
+                exclude: [/node_modules/, /public/],
+                loader: ["style-loader","css-loader","autoprefixer-loader","resolve-url"]
+            },
+            {
+                test: /\.sass$/,
+                exclude: [/node_modules/, /public/],
+                loader: ["style-loader","css-loader","sass-loader"]
+            },
+            {
+                test: /\.json$/,
+                loader: "json-loader"
+            }
         ]
     }
 }

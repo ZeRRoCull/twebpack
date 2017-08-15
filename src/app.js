@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 
+import './sass/app.sass';
+
 
 export default class App extends Component {
 
